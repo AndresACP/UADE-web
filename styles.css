@@ -1,0 +1,78 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #0073e6;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+main {
+    width: 100%;
+    margin: 0 auto;
+}
+
+section {
+    padding: 100px 20px;
+    text-align: center;
+    color: white;
+    background-size: cover;
+    background-position: center;
+}
+
+.seccion-con-fondo-destinos {
+    background-image: url('Fotos/plasha.jpg');
+}
+
+.seccion-con-fondo-paquetes {
+    background-image: url('Fotos/selva2.webp');
+}
+
+.seccion-con-fondo-testimonios {
+    background-image: url('Fotos/pngtree-airplane-flying-over-rocky-mountain-at-island-against-blue-sky-image_15692983.jpg');
+}
+
+.seccion-con-fondo-contacto {
+    background-image: url('Fotos/grecia.jpg');
+}
+
+footer {
+    background-color: #0073e6;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}

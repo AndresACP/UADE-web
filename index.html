@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Viajes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Agencia de Viajes</h1>
+        <nav>
+            <ul>
+                <li><a href="#destinos">Destinos</a></li>
+                <li><a href="#paquetes">Paquetes</a></li>
+                <li><a href="#testimonios">Testimonios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Sección 1: Destinos -->
+        <section id="destinos" class="seccion-con-fondo-destinos">
+            <h2>Destinos Populares</h2>
+            <p>Explora nuestros destinos más solicitados, desde playas paradisíacas hasta aventuras en la montaña.</p>
+        </section>
+
+
+        <!-- Sección 2: Paquetes -->
+        <section id="paquetes" class="seccion-con-fondo-paquetes">
+            <h2>Paquetes de Viaje</h2>
+            <p>Tenemos paquetes para todo tipo de viajero, desde planes familiares hasta escapadas románticas.</p>
+        </section>
+
+        <!-- Sección 3: Testimonios -->
+        <section id="testimonios" class="seccion-con-fondo-testimonios">
+            <h2>Testimonios de Clientes</h2>
+            <p>Descubre lo que nuestros clientes dicen sobre su experiencia con nosotros.</p>
+        </section>
+
+        <!-- Sección 4: Contacto -->
+        <section id="contacto" class="seccion-con-fondo-contacto">
+            <h2>Contacto</h2>
+            <p>¿Tienes alguna duda? ¡Contáctanos y te ayudaremos a planificar el viaje de tus sueños!</p>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Agencia de Viajes. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
