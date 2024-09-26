@@ -86,3 +86,23 @@ header > div{
     justify-content: center;
     gap: 10px;
 }
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    margin: 0px 90px;
+}
+
+.formulario > label {
+    color: black;
+}
+
+.formulario > input {
+    border-radius: 7px;
+}
+
+.formulario > button {
+    background-color: #284336;
+}
