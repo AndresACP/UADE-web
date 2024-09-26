@@ -63,7 +63,7 @@ section {
 }
 
 .seccion-con-fondo-testimonios {
-    background-image: url('Fotos/pngtree-airplane-flying-over-rocky-mountain-at-island-against-blue-sky-image_15692983.jpg');
+    background-image: url('Fotos/montana.webp');
 }
 
 .seccion-con-fondo-contacto {
@@ -75,4 +75,14 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
+}
+
+.logoAgencia{
+    width: 50px;
+}
+
+header > div{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
