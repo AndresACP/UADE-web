@@ -68,6 +68,7 @@ section {
 
 .seccion-con-fondo-contacto {
     background-image: url('Fotos/grecia.jpg');
+    color: black;
 }
 
 footer {
@@ -93,6 +94,7 @@ header > div{
     gap: 10px;
     justify-content: center;
     margin: 0px 90px;
+    align-items: center;
 }
 
 .formulario > label {
@@ -101,8 +103,18 @@ header > div{
 
 .formulario > input {
     border-radius: 7px;
+    width: 30%;
+    padding: 5px;
 }
 
 .formulario > button {
     background-color: #284336;
+    padding: 10px 20px 10px 20px;
+    border-radius: 7px;
+    color: white;
+}
+
+#mensaje {
+    width: 400px; 
+    height: 100px; 
 }
