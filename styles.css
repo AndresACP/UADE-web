@@ -55,19 +55,19 @@ section {
 }
 
 .seccion-con-fondo-destinos {
-    background-image: url('Fotos/plasha.jpg');
+    background-image: url('images/plasha.jpg');
 }
 
 .seccion-con-fondo-paquetes {
-    background-image: url('Fotos/selva2.webp');
+    background-image: url('images/selva2.webp');
 }
 
 .seccion-con-fondo-testimonios {
-    background-image: url('Fotos/montana.webp');
+    background-image: url('images/montana.webp');
 }
 
 .seccion-con-fondo-contacto {
-    background-image: url('Fotos/grecia.jpg');
+    background-image: url('images/grecia.jpg');
     color: black;
 }
 
@@ -117,4 +117,32 @@ header > div{
 #mensaje {
     width: 400px; 
     height: 100px; 
+}
+
+.logoRedSocial{
+    height: 50px;
+}
+
+.testimonio{
+    border-radius: 6px;
+    padding: 10px;
+    background-color: #f4f4f4;
+}
+
+.nombreTestimonio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    color: black;
+    gap: 10px;
+}
+
+.descripcionTestimonio{
+    color: black
+}
+
+.estrellas{
+    margin-top: 8px;
+    width: 90px;
 }
