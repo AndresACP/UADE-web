@@ -1,148 +1,364 @@
-/* General */
-* {
+  /* Estilos generales */
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
+    color: #333;
+    overflow-x: hidden;
 }
 
-header {
-    background-color: #3f4d46;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-}
-
-header h1 {
-    font-size: 2rem;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.1rem;
-}
-
-main {
-    width: 100%;
+.container {
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
-section {
-    padding: 100px 20px;
-    text-align: center;
-    color: white;
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff6b6b;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.logo:hover {
+    color: #ff8e8e;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ff6b6b;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background-image: url('https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
     background-size: cover;
     background-position: center;
-}
-
-.seccion-con-fondo-destinos {
-    background-image: url('images/plasha.jpg');
-}
-
-.seccion-con-fondo-paquetes {
-    background-image: url('images/selva2.webp');
-}
-
-.seccion-con-fondo-testimonios {
-    background-image: url('images/montana.webp');
-}
-
-.seccion-con-fondo-contacto {
-    background-image: url('images/grecia.jpg');
-    color: black;
-}
-
-footer {
-    background-color: #3f4d46;
-    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    padding: 10px 0;
+    color: #fff;
+    position: relative;
 }
 
-.logoAgencia{
-    width: 50px;
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
 }
 
-header > div{
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    animation: fadeInUp 1s ease;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    animation: fadeInUp 1s ease 0.5s;
+    animation-fill-mode: both;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #ff6b6b;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: fadeInUp 1s ease 1s;
+    animation-fill-mode: both;
+}
+
+.cta-button:hover {
+    background-color: #ff8e8e;
+    transform: translateY(-3px);
+}
+
+/* Destinos Section */
+.destinos {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #333;
+}
+
+.destinos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.destino-card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.destino-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.destino-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.destino-info {
+    padding: 20px;
+}
+
+.destino-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.destino-info p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.destino-precio {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ff6b6b;
+}
+
+/* Paquetes Section */
+.paquetes {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.paquetes-list {
     display: flex;
-    justify-content: center;
-    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.formulario{
+.paquete-item {
+    width: calc(33.333% - 20px);
+    margin-bottom: 40px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.paquete-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.paquete-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.paquete-info {
+    padding: 20px;
+}
+
+.paquete-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.paquete-info p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.paquete-precio {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ff6b6b;
+}
+
+/* Testimonios Section */
+.testimonios {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+}
+
+.testimonios-carousel {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.testimonio {
+    display: none;
+    animation: fadeEffect 1.5s;
+}
+
+.testimonio.active {
+    display: block;
+}
+
+.testimonio-content {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.testimonio-autor {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.footer-content {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
-    justify-content: center;
-    margin: 0px 90px;
-    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.formulario > label {
-    color: black;
+.footer-section {
+    width: calc(33.333% - 30px);
+    margin-bottom: 30px;
 }
 
-.formulario > input {
-    border-radius: 7px;
-    width: 30%;
-    padding: 5px;
+.footer-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
 }
 
-.formulario > button {
-    background-color: #284336;
-    padding: 10px 20px 10px 20px;
-    border-radius: 7px;
-    color: white;
+.footer-section p {
+    margin-bottom: 10px;
 }
 
-#mensaje {
-    width: 400px; 
-    height: 100px; 
-}
-
-.logoRedSocial{
-    height: 50px;
-}
-
-.testimonio{
-    border-radius: 6px;
-    padding: 10px;
-    background-color: #f4f4f4;
-}
-
-.nombreTestimonio{
+.social-icons {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 10px;
-    color: black;
-    gap: 10px;
+    gap: 15px;
 }
 
-.descripcionTestimonio{
-    color: black
+.social-icon {
+    color: #fff;
+    font-size: 1.5rem;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.estrellas{
-    margin-top: 8px;
-    width: 90px;
+.social-icon:hover {
+    color: #ff6b6b;
+    transform: translateY(-3px);
+}
+
+/* Animaciones */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        margin-top: 15px;
+    }
+
+    .nav-links li {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .paquete-item {
+        width: 100%;
+    }
+
+    .footer-section {
+        width: 100%;
+    }
 }
