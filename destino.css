@@ -384,3 +384,47 @@ body {
         width: 100%;
     }
 }
+
+/*Vista destino */
+.destino-detalle {
+    padding: 120px 0 80px;
+    background-color: #f9f9f9;
+}
+
+.destino-content {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.destino-imagen-grande {
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.destino-info {
+    width: 50%;
+}
+
+.destino-precio-reserva {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.reservar-btn {
+    padding: 12px 30px;
+}
+
+@media (max-width: 768px) {
+    .destino-content {
+        flex-direction: column;
+    }
+
+    .destino-imagen-grande,
+    .destino-info {
+        width: 100%;
+    }
+}
