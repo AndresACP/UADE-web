@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LSD - Tu Agencia de Viajes</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="logo">LSD</div>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#destinos">Destinos</a></li>
+                <li><a href="#paquetes">Paquetes</a></li>
+                <li><a href="#testimonios">Testimonios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <h1>Descubre el Mundo con Nosotros</h1>
+                <p>Experiencias únicas, destinos increíbles</p>
+                <a href="#destinos" class="cta-button">Explorar Destinos</a>
+            </div>
+        </section>
+
+        <section id="destinos" class="destinos">
+            <h2>Destinos Populares</h2>
+            <div class="destinos-grid" id="destinos-container"></div>
+        </section>
+
+        <section id="paquetes" class="paquetes">
+            <h2>Nuestros Paquetes</h2>
+            <div class="paquetes-grid">
+                <div class="paquete">
+                    <h3>Aventura en la Montaña</h3>
+                    <p>Explora las majestuosas montañas y disfruta de la naturaleza.</p>
+                    <a href="#" class="btn-detalles">Ver Detalles</a>
+                </div>
+                <div class="paquete">
+                    <h3>Relax en la Playa</h3>
+                    <p>Descansa en las mejores playas con aguas cristalinas.</p>
+                    <a href="#" class="btn-detalles">Ver Detalles</a>
+                </div>
+                <div class="paquete">
+                    <h3>Tour Cultural</h3>
+                    <p>Sumérgete en la historia y cultura de ciudades fascinantes.</p>
+                    <a href="#" class="btn-detalles">Ver Detalles</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonios" class="testimonios">
+            <h2>Lo que Dicen Nuestros Viajeros</h2>
+            <div class="testimonios-carousel" id="testimonios-container"></div>
+        </section>
+
+        <section id="contacto" class="contacto">
+            <h2>Contáctanos</h2>
+            <form id="contacto-form">
+                <input type="text" placeholder="Nombre" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Sobre Nosotros</h3>
+                <p>LSD es tu compañero de confianza para descubrir el mundo.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#destinos">Destinos</a></li>
+                    <li><a href="#paquetes">Paquetes</a></li>
+                    <li><a href="#testimonios">Testimonios</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 LSD. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <div id="destino-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="destino-detalles"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
