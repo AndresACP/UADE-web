@@ -3,56 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LSD - Tu Portal de Viajes</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Destino - LSD</title>
+    <link rel="stylesheet" href="destino.css">
 </head>
 <body>
     <header class="navbar">
         <div class="container navbar-container">
-            <a href="#" class="logo">LSD</a>
+            <a href="index.html" class="logo">LSD</a>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="#destinos">Destinos</a></li>
-                    <li><a href="#paquetes">Paquetes</a></li>
-                    <li><a href="#testimonios">Testimonios</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="index.html#destinos">Destinos</a></li>
+                    <li><a href="index.html#paquetes">Paquetes</a></li>
+                    <li><a href="index.html#testimonios">Testimonios</a></li>
+                    <li><a href="index.html#contacto">Contacto</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h1>Descubre el Mundo con Nosotros</h1>
-                <p>Experiencias únicas, destinos increíbles y recuerdos para toda la vida.</p>
-                <a href="#destinos" class="cta-button">Explora Destinos</a>
-            </div>
-        </section>
-
-        <section id="destinos" class="destinos">
+        <section class="destino-detalle">
             <div class="container">
-                <h2 class="section-title">Destinos Populares</h2>
-                <div class="destinos-grid" id="destinos-grid">
-                    <!-- Destinos se cargarán dinámicamente con JavaScript -->
-                </div>
-            </div>
-        </section>
-
-        <section id="paquetes" class="paquetes">
-            <div class="container">
-                <h2 class="section-title">Nuestros Paquetes</h2>
-                <div class="paquetes-list" id="paquetes-list">
-                    <!-- Paquetes se cargarán dinámicamente con JavaScript -->
-                </div>
-            </div>
-        </section>
-
-        <section id="testimonios" class="testimonios">
-            <div class="container">
-                <h2 class="section-title">Lo que dicen nuestros clientes</h2>
-                <div class="testimonios-carousel" id="testimonios-carousel">
-                    <!-- Testimonios se cargarán dinámicamente con JavaScript -->
+                <h1 id="destino-nombre"></h1>
+                <div class="destino-content">
+                    <img id="destino-imagen" src="" alt="" class="destino-imagen-grande">
+                    <div class="destino-info">
+                        <p id="destino-descripcion"></p>
+                        <div class="destino-precio-reserva">
+                            <span id="destino-precio" class="destino-precio"></span>
+                            <button class="cta-button reservar-btn">Reservar ahora</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -81,6 +62,7 @@
             </div>
         </div>
     </footer>
+    
     <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
     <script src="destino-script.js"></script>
